@@ -10,5 +10,4 @@ get-debloated-pkgs --add-common --prefer-nano ! llvm-libs
 
 echo "Building Keypunch..."
 echo "---------------------------------------------------------------"
-wget --retry-connrefused --tries=30 https://raw.githubusercontent.com/archlinuxcn/repo/refs/heads/master/archlinuxcn/keypunch-git/PKGBUILD -O ./PKGBUILD
-make-aur-package
+make-aur-package --archlinuxcn keypunch-git
