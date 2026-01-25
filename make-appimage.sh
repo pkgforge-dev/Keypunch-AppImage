@@ -2,6 +2,8 @@
 
 set -eu
 
+find /usr/share/applications
+
 ARCH=$(uname -m)
 VERSION=$(pacman -Q keypunch-git | awk '{print $2; exit}')
 export ARCH VERSION
