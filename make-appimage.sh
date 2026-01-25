@@ -9,7 +9,7 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/scalable/apps/dev.bragefuglseth.Keypunch.svg
-export DESKTOP=/usr/share/applications/dev.bragefuglseth.Keypunch.desktop
+export DESKTOP=/usr/share/applications/keypunch.desktop
 export STARTUPWMCLASS=dev.bragefuglseth.Keypunch # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
 export GTK_CLASS_FIX=1
 
