@@ -1,3 +1,5 @@
+<div align="center">
+
 # Keypunch AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Keypunch-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Keypunch-AppImage/releases/latest)
@@ -8,7 +10,11 @@
   <img src="https://raw.githubusercontent.com/bragefuglseth/keypunch/refs/heads/main/data/artwork/icon/dev.bragefuglseth.Keypunch.svg" width="128" />
 </p>
 
-* [Upstream URL](https://github.com/bragefuglseth/keypunch)
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Keypunch-AppImage/releases/latest) | [Click here](https://github.com/bragefuglseth/keypunch) |
+
+</div>
 
 ---
 
