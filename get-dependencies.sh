@@ -12,3 +12,6 @@ echo "Building Keypunch..."
 echo "---------------------------------------------------------------"
 wget --retry-connrefused --tries=30 https://raw.githubusercontent.com/archlinuxcn/repo/refs/heads/master/archlinuxcn/keypunch-git/PKGBUILD -O ./PKGBUILD
 make-aur-package
+
+# no need for this
+pacman -Rdd --noconfirm mesa

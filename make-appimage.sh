@@ -12,9 +12,14 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/dev.bragefuglseth.Keypunch.De
 export DESKTOP=/usr/share/applications/dev.bragefuglseth.Keypunch.Devel.desktop
 export STARTUPWMCLASS=dev.bragefuglseth.Keypunch.Devel # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
 export GTK_CLASS_FIX=1
+export DEPLOY_OPENGL=0
 
 # Deploy dependencies
 quick-sharun /usr/bin/keypunch
+
+# force only software, hardware accel is not really needed for this simple app
+echo 'GSK_RENDERER=cairo'    >> ./AppDir/.env
+echo 'GDK_DISABLE=gl,vulkan' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
