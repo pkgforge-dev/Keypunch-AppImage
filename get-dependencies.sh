@@ -14,4 +14,4 @@ wget --retry-connrefused --tries=30 https://raw.githubusercontent.com/archlinuxc
 make-aur-package
 
 # no need for this
-pacman -Rdd mesa
+pacman -Rdd --noconfirm mesa
