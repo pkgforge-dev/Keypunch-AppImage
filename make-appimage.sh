@@ -16,5 +16,9 @@ export GTK_CLASS_FIX=1
 # Deploy dependencies
 quick-sharun /usr/bin/keypunch
 
+# force only software, hardware accel is not really needed for this simple app
+echo 'GSK_RENDERER=cairo'    >> ./AppDir/.env
+echo 'GDK_DISABLE=gl,vulkan' >> ./AppDir/.env
+
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
