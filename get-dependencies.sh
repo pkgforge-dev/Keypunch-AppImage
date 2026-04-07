@@ -4,17 +4,16 @@ set -eu
 
 ARCH=$(uname -m)
 
-pacman -Syu --noconfirm pkgconf libadwaita
-
-echo "TEST------------------------------------------------------TEST"
-pkg-config --modversion libadwaita-1
-echo "TEST------------------------------------------------------TEST"
-
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 echo "Building Keypunch..."
 echo "---------------------------------------------------------------"
+
 wget --retry-connrefused --tries=30 https://raw.githubusercontent.com/archlinuxcn/repo/refs/heads/master/archlinuxcn/keypunch-git/PKGBUILD -O ./PKGBUILD
+
+export LIBADWAITA_1_NO_PKG_CONFIG=1
+export SYSTEM_DEPS_LIBADWAITA_1_NO_PKG_CONFIG=1
+export PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1
 make-aur-package
