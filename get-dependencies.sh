@@ -4,7 +4,11 @@ set -eu
 
 ARCH=$(uname -m)
 
-pacman -Syu --noconfirm pkgconf
+pacman -Syu --noconfirm pkgconf libadwaita
+
+echo "TEST------------------------------------------------------TEST"
+pkg-config --modversion libadwaita-1
+echo "TEST------------------------------------------------------TEST"
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
