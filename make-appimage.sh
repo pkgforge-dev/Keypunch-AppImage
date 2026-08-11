@@ -3,14 +3,13 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q keypunch-git | awk '{print $2; exit}')
-export ARCH VERSION
+export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/scalable/apps/dev.bragefuglseth.Keypunch.Devel.svg
-export DESKTOP=/usr/share/applications/dev.bragefuglseth.Keypunch.Devel.desktop
-export STARTUPWMCLASS=dev.bragefuglseth.Keypunch.Devel # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
+export ICON=/usr/share/icons/hicolor/scalable/apps/no.bragefuglseth.Keypunch.svg
+export DESKTOP=/usr/share/applications/no.bragefuglseth.Keypunch.desktop
+export STARTUPWMCLASS=no.bragefuglseth.Keypunch # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
 export GTK_CLASS_FIX=1
 export ALWAYS_SOFTWARE=1 # force only software, hardware accel is not really needed for this simple app
 
