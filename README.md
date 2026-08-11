@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Keypunch-AppImage)](https://github.com/pkgforge-dev/Keypunch-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/bragefuglseth/keypunch/refs/heads/main/data/artwork/icon/dev.bragefuglseth.Keypunch.svg" width="128" />
+  <img src="https://raw.githubusercontent.com/bragefuglseth/keypunch/refs/heads/main/data/artwork/icon/no.bragefuglseth.Keypunch.svg" width="128" />
 </p>
 
 | Latest Stable Release | Upstream URL |
