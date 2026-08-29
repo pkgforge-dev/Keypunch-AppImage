@@ -11,7 +11,7 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/no.bragefuglseth.Keypunch.svg
 export DESKTOP=/usr/share/applications/no.bragefuglseth.Keypunch.desktop
 export STARTUPWMCLASS=no.bragefuglseth.Keypunch # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
 export GTK_CLASS_FIX=1
-export ALWAYS_SOFTWARE=1 # force only software, hardware accel is not really needed for this simple app
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/keypunch
